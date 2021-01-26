@@ -8,4 +8,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface PricesRepository extends JpaRepository<Prices, Long> {
 
+  List<Prices>  findByProductId(Integer productId);
 }
+
